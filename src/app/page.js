@@ -2,7 +2,7 @@ import ListComponent from "@/components/ListComponent";
 
 async function getData(){
     //Timed-base Revalidation
-    let res = await fetch("/api/todo", {cache:"no-cache"});
+    let res = await fetch("https://next-mongodb-project-mhqwxgqhx-goni715.vercel.app/api/todo", {cache:"no-cache"});
     let json = await res.json();
     return json;
 }

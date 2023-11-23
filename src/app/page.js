@@ -10,7 +10,7 @@ const Home = () => {
     const [data, setData] = useState();
 
     const fetchTodos = async () => {
-        const response = await fetch(`http://localhost:3000/api/todo`);
+        const response = await fetch(`/api/todo`);
         const data = await response.json();
         setData(data)
     }

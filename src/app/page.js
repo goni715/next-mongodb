@@ -2,7 +2,7 @@ import ListComponent from "@/components/ListComponent";
 
 async function getData(){
     //Timed-base Revalidation
-    let res = await fetch("http://localhost:3000/api/todo", {cache:"no-cache"});
+    let res = await fetch("api/todo", {cache:"no-cache"});
     let json = await res.json();
     return json;
 }

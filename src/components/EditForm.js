@@ -27,7 +27,7 @@ const EditForm = ({id}) => {
         e.preventDefault()
         const res = await axios.put(`/api/todo/update?id=${id}`, {name:name});
         setName("")
-        router.refresh();
+      
         setTimeout(()=>{
            router.push('/')
         },300)
